@@ -332,7 +332,6 @@ companySchema.index({ name: 'text', description: 'text' });
 companySchema.index({ industry: 1 });
 companySchema.index({ size: 1 });
 companySchema.index({ 'headquarters.city': 1, 'headquarters.state': 1, 'headquarters.country': 1 });
-companySchema.index({ slug: 1 });
 companySchema.index({ isVerified: 1 });
 companySchema.index({ status: 1 });
 companySchema.index({ 'ratings.overall': -1 });

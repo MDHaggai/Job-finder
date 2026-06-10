@@ -283,7 +283,6 @@ userSchema.methods.createEmailVerificationToken = function() {
 };
 
 // Index for better performance
-userSchema.index({ email: 1 });
 userSchema.index({ 'location.city': 1, 'location.state': 1 });
 userSchema.index({ skills: 1 });
 userSchema.index({ createdAt: -1 });
